@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>                       <!-- barra de navegação -->
+        <ul>
+            <li>
+                <a>Sobre mim</a>
+            </li>
+            <li>
+                <a>Formação educacional</a>
+            </li>
+            <li>
+                <a>Portfólio</a>
+            </li>
+            <li>
+                <a>Contato</a>
+            </li>
+        </ul>  
+    </nav>
+
+    <div class="center">
+        <img src="./img/profile.jpg" id="profile">            <!-- imagem de perfil -->
+    </div>
+
+    <article class="center">                  <!-- topicos -->
+        <h1>Sobre mim</h1>
+        <p style="font-weight: lighter;">Meu nome é Pedro Lucas. Sou apaixonado por tecnologia e adoro encontrar soluções criativas, consertar e aprender coisas novas. Valorizo o equilíbrio entre mente e corpo, no meu tempo livre pratico musculação e jogo videogames.</p>
+    
+        <h1>Formação educacional</h1>
+        <p style="font-weight: lighter;">Concluí o ensino médio e atualmente estou cursando graduação em Análise e Desenvolvimento de Sistemas, onde aprofundo meus conhecimentos em programação, desenvolvimento de software e resolução de desafios tecnológicos.</p>
+    
+        <h1>Portfólio</h1>
+        <p style="font-weight: lighter;">Atividades de outra disciplina.</p>
+        <table>                          <!-- tabela para organizar as imagens -->
+            <tr>
+                <th style="vertical-align: top;"><img src="./img/img1.png" id="img_table"></th>      
+                <th style="vertical-align: top;"><img src="./img/img2.png" id="img_table"></th>
+                <th style="vertical-align: top;"><img src="./img/img3.png" id="img_table"></th>
+            </tr>
+        </table>
+    </article>
+    
+    <br>
+    <br>
+
+    <div  class="center">                   <!-- formulario para envio de mensagem -->
+        <h2>Contato</h2>
+        <form>
+           <label for="nome">Nome:</label>
+           <input type="text" name="nome" id="nome">           <!-- caixa para inserir o nome -->
+           <br>
+           <label for="email">E-mail:</label>
+           <input type="email" name="email" id="email">        <!-- caixa para inserir o e-mail -->
+           <br>
+           <textarea name="msg" rows="6" cols="50">Digite sua mensagem...</textarea>      <!-- caixa de entrada para inserir a mensagem -->
+           <br>
+           <br>
+           <input type="submit" value="Enviar">          <!-- botão para enviar a mensagem -->
+        </form>
+    </div>
+
+    <footer class="center">                <!-- rodapé com link para o perfil do instagram -->
+        <a href="https://www.instagram.com/pl.slva/" target="_blank">
+            <img src="./img/instagram.svg"></img>
+        </a>
+        <a href="https://www.instagram.com/pl.slva/" target="_blank" id="link">Instagram</a>
+    </footer>
+    
+</body>
+</html>
